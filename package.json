@@ -1,0 +1,17 @@
+{
+  "name": "webpack-test",
+  "version": "0.0.1",
+  "description": "Learning how to use webpack.  Heard good things about it...",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "font-awesome": "^4.6.3"
+  }
+}
