@@ -4,10 +4,17 @@ var webpack = require('webpack');
 module.exports = {
   context: __dirname,
   devtool: debug ? "inline-sourcemap" : null,
+
+
   entry: "./js/app.js",
   output: {
     path: __dirname + "/bin",
-    filename: "app.min.js"
+    filename: "bundle.js"
+   },
+  module: {
+    loaders: [
+      { test: /\.css$/, loader: 'style!css!' }
+    ]
   },
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
